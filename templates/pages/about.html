@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+About Me - My Django App
+{% endblock title %}
+
+{% block content %}
+<div class="card p-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="display-4 mb-4 text-primary">About this message board</h1>
+            <p class="lead">
+                This message board is a simple Django application designed to allow users to post and view messages.
+                It serves as a demonstration of basic CRUD (Create, Read, Update, Delete) operations in Django.
+            </p>
+            
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="card bg-light p-3 mb-4">
+                        <h2 class="h4 mb-3"><i class="bi bi-list-check text-primary me-2"></i>Features</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Post new messages</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>View all messages</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Edit existing messages</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Delete messages</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card bg-light p-3">
+                        <h2 class="h4 mb-3"><i class="bi bi-tools text-primary me-2"></i>Technologies Used</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-database me-2"></i>Django</li>
+                            <li class="mb-2"><i class="bi bi-bootstrap-fill me-2"></i>Bootstrap for styling</li>
+                            <li class="mb-2"><i class="bi bi-file-earmark-binary me-2"></i>SQLite for the database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

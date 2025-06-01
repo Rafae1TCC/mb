@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home - My Django App {% endblock title %}
+
+{% block content %}
+<div class="card p-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1 class="display-4 text-primary mb-4">Welcome to Message Board</h1>
+            <p class="lead">
+                Welcome to my Django application! This app is designed to showcase my skills in web development using Django.
+                Here, you can find various features and functionalities that demonstrate the power of this framework.
+            </p>
+            <div class="d-flex gap-3 mt-4">
+                <a href="{% url 'list' %}" class="btn btn-primary btn-lg px-4">
+                    <i class="bi bi-card-text me-2"></i>View Posts
+                </a>
+                <a href="{% url 'about' %}" class="btn btn-outline-secondary btn-lg px-4">
+                    <i class="bi bi-info-circle me-2"></i>Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="my-5">
+    
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 p-3">
+                <div class="card-body">
+                    <i class="bi bi-chat-square-text fs-1 text-primary mb-3"></i>
+                    <h3 class="h4">Simple Messaging</h3>
+                    <p>Post and read messages in a clean, intuitive interface.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 p-3">
+                <div class="card-body">
+                    <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
+                    <h3 class="h4">Secure Platform</h3>
+                    <p>Built with Django's security features to protect your data.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 p-3">
+                <div class="card-body">
+                    <i class="bi bi-lightning-charge fs-1 text-primary mb-3"></i>
+                    <h3 class="h4">Fast Performance</h3>
+                    <p>Optimized for quick loading and smooth user experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
